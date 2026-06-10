@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "960070611808",
+    "project_id": "todos-firestore-945ed",
+    "storage_bucket": "todos-firestore-945ed.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:960070611808:android:21f11a4220fbbafb6ea405",
+        "android_client_info": {
+          "package_name": "com.taskflow.todo_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3__U74Q1Z-fOMBhYxijzIf_focaF9Lu4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
