@@ -6,6 +6,7 @@ import '../../providers/auth_provider.dart';
 import '../../utils/responsive.dart';
 import '../../utils/router.dart';
 import '../../utils/validators.dart';
+import '../../widgets/app_logo.dart';
 import '../../widgets/custom_text_field.dart';
 import '../../widgets/loading_indicator.dart';
 
@@ -106,12 +107,8 @@ class _LoginScreenState extends ConsumerState<LoginScreen>
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: [
                         const SizedBox(height: 24),
-                        Icon(
-                          Icons.check_circle_outline,
-                          size: 64,
-                          color: colorScheme.primary,
-                        ),
-                        const SizedBox(height: 16),
+                        const Center(child: AppLogo(height: 140)),
+                        const SizedBox(height: 24),
                         Text(
                           'Welcome back',
                           textAlign: TextAlign.center,

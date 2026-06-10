@@ -7,6 +7,7 @@ import '../../providers/theme_provider.dart';
 import '../../utils/constants.dart';
 import '../../utils/responsive.dart';
 import '../../utils/router.dart';
+import '../../widgets/app_logo.dart';
 import '../../widgets/confirmation_dialog.dart';
 import '../dashboard/dashboard_screen.dart';
 import '../tasks/task_list_screen.dart';
@@ -57,16 +58,14 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+        title: Row(
           children: [
-            Text(AppConstants.appName),
+            const AppLogo(height: 36),
+            const SizedBox(width: 12),
             if (user != null)
               Text(
                 'Hello, ${user.name.split(' ').first}',
-                style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                      color: Theme.of(context).colorScheme.onSurfaceVariant,
-                    ),
+                style: Theme.of(context).textTheme.titleMedium,
               ),
           ],
         ),

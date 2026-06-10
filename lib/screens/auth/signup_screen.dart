@@ -6,6 +6,7 @@ import '../../providers/auth_provider.dart';
 import '../../utils/responsive.dart';
 import '../../utils/router.dart';
 import '../../utils/validators.dart';
+import '../../widgets/app_logo.dart';
 import '../../widgets/custom_text_field.dart';
 import '../../widgets/loading_indicator.dart';
 
@@ -91,6 +92,8 @@ class _SignUpScreenState extends ConsumerState<SignUpScreen>
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
+                      const Center(child: AppLogo(height: 120)),
+                      const SizedBox(height: 24),
                       Text(
                         'Create account',
                         style: Theme.of(context)
